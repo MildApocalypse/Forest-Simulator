@@ -7,3 +7,9 @@
 // A COMP308 project by Lawrence Buck and Sam Costigan.
 //
 //----------------------------------------------------------------------------
+
+#include "heightmap.hpp"
+
+int main(int argc, char **argv) {
+	Heightmap hm = Heightmap();
+}

@@ -30,3 +30,6 @@
 
 # Folders
 /build
+
+# Sublime files
+*.sublime-*
