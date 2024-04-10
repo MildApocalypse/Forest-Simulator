@@ -1,0 +1,12 @@
+start
+name		Next
+axiom		G
+startLength	1.0 4.0
+branchAngle	25.0
+probability	0.8
+generations	3
+rulestart
+	match		G
+	transform	GG[+GG][-GG][&GG][^GG]
+ruleend
+end

@@ -1,0 +1,270 @@
+start
+name		Pretend
+axiom		F
+startLength	1.0 2.0
+branchAngle	25.0
+probability	0.2
+generations	2
+rulestart
+	match		F
+	transform	FF-[/+F-F-FS]+[\\-F+F+FS]
+ruleend
+end
+
+start
+name		Next
+axiom		F
+startLength	1.0 4.0
+branchAngle	15.0
+probability	0.8
+generations	3
+rulestart
+	match		F
+	transform	F[/+F][\\-FS]
+	chance		0.4
+ruleend
+rulestart
+	match		F
+	transform	F[\\-F][+/FS]
+	chance		0.6
+ruleend
+end
+
+start
+name		Pretend
+axiom		F
+startLength	1.0 2.0
+branchAngle	25.0
+probability	0.2
+generations	6
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		F
+	transform	F[!^-F][!\\\+F]
+	rulechance	0.8
+ruleend
+rulestart
+	match		F
+	transform	F[+F]
+ruleend
+end
+
+start
+name		Pretend
+axiom		F
+startLength	1.0 2.0
+branchAngle	25.0
+probability	0.2
+generations	4
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		F
+	transform	F[!^-F][!\\\+F]
+	rulechance	0.8
+ruleend
+rulestart
+	match		F
+	transform	F[+F]
+ruleend
+end
+
+start
+axiom		A
+startLength	1.0 1.0
+branchAngle	22.5
+generations	3
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		A
+	transform	[&FL!A]/////’[&FL!A]///////’[&FL!A]
+ruleend
+rulestart
+	match		F
+	transform	S ///// F
+ruleend
+rulestart
+	match		S
+	transform	F L
+ruleend
+rulestart
+	match		L
+	transform	[’’’∧∧{-f.+f.+f.-|-f.+f.+f.}]
+ruleend
+end
+
+start
+axiom		X
+startLength	1.0 1.0
+branchAngle	25.0
+generations	5
+rulestart
+	match		X
+	transform	F[-X][X]F[-X]+FX
+ruleend
+rulestart
+	match		F
+	transform	FF
+ruleend
+end
+
+start
+axiom		X
+startLength	0.5 1.0
+branchAngle	25.0
+generations	4
+rulestart
+	match		X
+	transform	F[\\\\-X][//X]F[^-X]+F&X
+ruleend
+rulestart
+	match		F
+	transform	FF
+ruleend
+end
+
+start
+axiom		![A][B]
+startLength	1.0 1.0
+branchAngle	22.5
+generations	10
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		A
+	transform	[+A{.].C.}
+ruleend
+rulestart
+	match		B
+	transform	[-B{.].C.}
+ruleend
+rulestart
+	match		C
+	transform	fC
+ruleend
+end
+
+start
+axiom		A
+startLength	1.0 1.0
+branchAngle	22.5
+generations	7
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		A
+	transform	[&FL!A]+’[&FL!A]-’[&FL!A]
+ruleend
+rulestart
+	match		F
+	transform	S  F
+ruleend
+rulestart
+	match		S
+	transform	F L
+ruleend
+rulestart
+	match		L
+	transform	[’’’∧∧{-f.+f.+f.-|-f.+f.+f.}]
+ruleend
+end
+
+start
+axiom		A
+startLength	1.0 1.0
+branchAngle	22.5
+generations	2
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		A
+	transform	F[+FS][-FS][\FS][/FS]
+ruleend
+rulestart
+	match		S
+	transform	[’’∧∧{-f.+f.+f.-|-f.+f.+f.}]
+ruleend
+end
+
+start
+axiom		X
+startLength	1.0 1.0
+branchAngle	25.7
+generations	7
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		X
+	transform	F[+X][-X]FX
+ruleend
+rulestart
+	match		F
+	transform	FF
+ruleend
+end
+
+start
+axiom		X
+startLength	1.0 1.0
+branchAngle	25.0
+generations	3
+rulestart
+	match		X
+	transform	F[\X][X]F[&\X]^/FX
+ruleend
+rulestart
+	match		F
+	transform	FF
+ruleend
+end
+
+start
+axiom		L
+startLength	0.5 1.0
+branchAngle	22.5
+generations	4
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		L
+	transform	{’-f.X+X-f.X-|-f.X+X+f.X}
+ruleend
+rulestart
+	match		X
+	transform	f.X
+ruleend
+end
+
+start
+axiom		L
+startLength	0.5 1.0
+branchAngle	22.5
+generations	1
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		L
+	transform	’{[++++f.][++ff.][+fff.][fffff.][-fff.][--ff.][----f.]}
+ruleend
+end
+
+start
+axiom		L
+startLength	2.0 2.0
+branchAngle	25.0
+generations	1
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		L
+	transform	’[{+.G.{.&G.{.&G.][-G[&G[&G.].}.].}.}]
+ruleend
+end
+
+start
+axiom		L
+startLength	1.0 1.0
+branchAngle	25.0
+generations	2
+colours		0.12 0.58 0.18	0.3 0.66 0.23	0.44 0.55 0.07	0.51 0.83 0.21
+rulestart
+	match		L
+	transform	&&F[&--S][++/[&++S]&F[--S][++S]F[--S][++S]F[--S][++S]]&F[--S][++S]F[--S][++S]F[--S][++S]
+ruleend
+rulestart
+	match		S
+	transform	[!!!!!!!!!!’’[{+.G.{.&G.{.&G.][-G[&G[&G.].}.].}.}]]
+ruleend
+end

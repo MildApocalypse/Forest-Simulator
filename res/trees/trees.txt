@@ -1,0 +1,86 @@
+start
+name		Pretend
+axiom		A
+startLength	1.0 2.0
+branchAngle	25.0
+probability	0.2
+generations	5
+colours		0.588 0.196 0.55	0.549 0.251 0.184	0.949 0.82 0.431	0.851 0.533 0.294	0.251 0.067 0.145
+rulestart
+	match		A
+	transform	D’D-[’/+B-B-B]+[\\-B+B+B]
+	rulechance	1
+ruleend
+rulestart
+	match		A
+	transform	D’D[’/+B-B-B]+[\\-B+B+B]
+	rulechance	1
+ruleend
+rulestart
+	match		D
+	transform	GG
+	rulechance	2
+ruleend
+rulestart
+	match		D
+	transform	GG[+&GGS]
+	rulechance	2
+ruleend
+rulestart
+	match		B
+	transform	C’C-[’/+CS-CS-CS]+[\\-CS+CS+CS]
+ruleend
+rulestart
+	match		C
+	transform	GR
+ruleend
+rulestart
+	match		R
+	transform	SSS
+ruleend
+rulestart
+	match		S
+	transform	[!!!!!!’’&&∧∧{-f.+f.+f.-|-f.+f.+f.}]
+	rulechance	3
+ruleend
+rulestart
+	match		S
+	transform	[!!!!!!’’-^^^^^{-f.+f.+f.-|-f.+f.+f.}]
+	rulechance	3
+ruleend
+rulestart
+	match		S
+	transform	[!!!!!!’’&&∧∧{-f.+f.+f.-|-f.+f.+f.}]
+	rulechance	3
+ruleend
+rulestart
+	match		S
+	transform	[!!!!!!’’\\\-^^^^^{-f.+f.+f.-|-f.+f.+f.}]
+	rulechance	3
+ruleend
+rulestart
+	match		S
+	transform	[!!!!!!’’////^^^^^{-f.+f.+f.-|-f.+f.+f.}]
+ruleend
+end
+
+start
+axiom		X
+startLength	1.0 1.0
+branchAngle	22.5
+generations	3
+rulestart
+	match		X
+	transform	G[\X][X]G[&\X]^/GX
+ruleend
+rulestart
+	match		G
+	transform	GG
+	rulechance	3
+ruleend
+rulestart
+	match		G
+	transform	GG[-GG][^+GG]
+	rulechance	5
+ruleend
+end

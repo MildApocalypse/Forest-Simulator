@@ -1,0 +1,13 @@
+﻿  boid.cpp
+C:\Users\lawre\source\repos\Forest-Simulator\boid.cpp(76,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\lawre\source\repos\Forest-Simulator\cgra_math.hpp(134,27): warning C4244: 'return': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\lawre\source\repos\Forest-Simulator\boid.cpp(100): message : see reference to function template instantiation 'T cgra::degrees<float>(T)' being compiled
+          with
+          [
+              T=float
+          ]
+  Forest-Simulator.vcxproj -> C:\Users\lawre\source\repos\Forest-Simulator\Debug\Forest-Simulator.exe
