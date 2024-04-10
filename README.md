@@ -1,4 +1,4 @@
-#Forest - Simulator
+# Forest - Simulator
 Group project by Lawrence Buck and Sam Costigan in COMP308 at Victoria Univeristy of Wellington. Updated
 in 2024 to work with visual studio.
 
